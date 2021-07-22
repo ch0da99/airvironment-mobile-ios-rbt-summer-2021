@@ -1,0 +1,21 @@
+//
+//  HistoryScreenViewController.swift
+//  airvironment-mobile-ios-rbt-summer-2021
+//
+//  Created by Letnja Praksa 1 on 22.7.21..
+//
+
+import UIKit
+
+class HistoryScreenViewController: UIViewController {
+    
+    private let viewModel: HistoryScreenViewModel = HistoryScreenViewModel(repository: RepositoryImplementation())
+
+    @IBOutlet weak var measurementTableView: UITableView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+}
+

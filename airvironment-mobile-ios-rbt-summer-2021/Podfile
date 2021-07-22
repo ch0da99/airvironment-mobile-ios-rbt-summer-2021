@@ -1,0 +1,13 @@
+workspace 'airvironment-mobile-ios-rbt-summer-2021'
+minimum_deployment_target = 14.1
+
+platform :ios, minimum_deployment_target
+
+target 'airvironment-mobile-ios-rbt-summer-2021' do
+  project 'airvironment-mobile-ios-rbt-summer-2021'
+  use_frameworks!
+  
+  pod 'Alamofire'
+  pod 'Kingfisher'
+
+end
