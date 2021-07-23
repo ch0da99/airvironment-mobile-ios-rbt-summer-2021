@@ -7,29 +7,39 @@
 
 import UIKit
 
-class MainScreenViewModel: NSObject  {
+class MainScreenViewModel: BaseViewModel  {
     
     @objc dynamic var measurement: MeasurementResponse?
     
     var repository: Repository!
     
+    var timer: Timer!
+    
     init(repository: Repository) {
         self.repository = repository
     }
     
-    func onViewDidLoad() {
+    override func onViewDidLoad() {
+        super.onViewDidLoad()
         getLatestMeasuremet()
+        self.timer = Timer.scheduledTimer(timeInterval: 600.0,target: self, selector:
+                #selector(getLatestMeasuremet), userInfo: nil, repeats: true)
     }
     
-    func getLatestMeasuremet() {
+    @objc func getLatestMeasuremet() {
+        //print(Date.init())
+        self.loading = true
         repository.getLatestMeasurement(){ result in
             switch result {
             case.success(let measurement):
                 self.measurement = measurement
+                self.loading = false
             case.failure(let error):
+                self.loading = false
                 break
             }
             
         }
+        
     }
 }

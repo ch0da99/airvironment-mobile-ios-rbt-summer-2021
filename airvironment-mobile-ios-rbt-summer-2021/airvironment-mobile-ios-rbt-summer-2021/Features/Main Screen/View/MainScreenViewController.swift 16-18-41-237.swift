@@ -7,32 +7,46 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+class MainScreenViewController: BaseViewController<MainScreenViewModel> {
     
     @IBOutlet weak var lastUpdatedLabel: UILabel!
+   
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var polutionLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     
-    private var nameObserver: NSKeyValueObservation!
+    private var measurementObserver: NSKeyValueObservation!
     
-    private let viewModel: MainScreenViewModel = MainScreenViewModel(repository: RepositoryImplementation())
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = MainScreenViewModel(repository: RepositoryImplementation())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        observeLiveData()
-        viewModel.onViewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    private func observeLiveData() {
-        nameObserver = viewModel.observe(\.measurement, options: .new) { _, measurement  in
+    deinit {
+        viewModel.timer.invalidate()
+        viewModel.timer = nil
+    }
+    
+    override func observeLiveData() {
+        super.observeLiveData()
+        measurementObserver = viewModel.observe(\.measurement, options: .new) { _, measurement  in
             if let measurement = measurement.newValue{
                 self.temperatureLabel.text = String(measurement!.temperature!)
                 self.humidityLabel.text = String(measurement!.humidity!)
                 self.polutionLabel.text = String(measurement!.pollution!)
+                if let date = dateToString(date: measurement!.created) {
+                    self.lastUpdatedLabel.text = "Last updated " + date
+                }
             }
+            
 
         }
     }

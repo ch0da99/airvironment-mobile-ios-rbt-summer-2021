@@ -10,8 +10,12 @@ import Kingfisher
 
 class HistoryScreenViewCellTableViewCell: UITableViewCell {
 
+    
+    
     @IBOutlet weak var pollutionLabel: UILabel!
+    
     @IBOutlet weak var humidityLabel: UILabel!
+    
     @IBOutlet weak var temperatureLabel: UILabel!
     
     override func awakeFromNib() {
@@ -25,4 +29,16 @@ class HistoryScreenViewCellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(measurement: MeasurementResponse){
+        temperatureLabel.text = String(measurement.temperature)
+        humidityLabel.text = String(measurement.humidity)
+        pollutionLabel.text = String(measurement.pollution)
+    }
+    
+}
+
+extension UITableViewCell {
+    static func reusableIdentifier() -> String {
+        String(describing: Self.self)
+    }
 }

@@ -22,17 +22,22 @@
 		CFC438EF26A96CDF00C01FE7 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC438EE26A96CDF00C01FE7 /* RemoteDataSource.swift */; };
 		CFC438F326A96D1B00C01FE7 /* AlamofireDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC438F226A96D1B00C01FE7 /* AlamofireDataSource.swift */; };
 		CFC438F526A96D2900C01FE7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC438F426A96D2900C01FE7 /* Router.swift */; };
-		CFC4390826A97F0200C01FE7 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4390626A97F0200C01FE7 /* MainScreenViewController.swift */; };
 		CFC4390926A97F0200C01FE7 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4390726A97F0200C01FE7 /* MainScreenViewController.xib */; };
 		CFC4391626A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4391426A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.swift */; };
 		CFC4391726A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4391526A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.xib */; };
-		CFC4391C26A9AAC400C01FE7 /* HistoryScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4391A26A9AAC400C01FE7 /* HistoryScreenViewController.swift */; };
-		CFC4391D26A9AAC400C01FE7 /* HistoryScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4391B26A9AAC400C01FE7 /* HistoryScreenViewController.xib */; };
 		CFC4391F26A9AE4D00C01FE7 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4391E26A9AE4D00C01FE7 /* Meta.swift */; };
 		CFC4392126A9AFC400C01FE7 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4392026A9AFC400C01FE7 /* Measurement.swift */; };
-		CFC4392526A9C21500C01FE7 /* HistoryScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4392326A9C21500C01FE7 /* HistoryScreenViewController.swift */; };
-		CFC4392626A9C21500C01FE7 /* HistoryScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4392426A9C21500C01FE7 /* HistoryScreenViewController.xib */; };
 		CFC4392826A9C2A200C01FE7 /* HistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4392726A9C2A200C01FE7 /* HistoryScreenViewModel.swift */; };
+		CFC4392C26AAA8BF00C01FE7 /* HistoryScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4392A26AAA8BF00C01FE7 /* HistoryScreenViewController.swift */; };
+		CFC4392D26AAA8BF00C01FE7 /* HistoryScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4392B26AAA8BF00C01FE7 /* HistoryScreenViewController.xib */; };
+		CFC4393126AAD2F700C01FE7 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393026AAD2F700C01FE7 /* ViewUtil.swift */; };
+		CFC4393426AAD37400C01FE7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393326AAD37400C01FE7 /* BaseViewModel.swift */; };
+		CFC4393626AAD38000C01FE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393526AAD38000C01FE7 /* BaseViewController.swift */; };
+		CFC4393926AAD55900C01FE7 /* LoadOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393726AAD55900C01FE7 /* LoadOverlay.swift */; };
+		CFC4393A26AAD55900C01FE7 /* LoadOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4393826AAD55900C01FE7 /* LoadOverlay.xib */; };
+		CFC4393D26AAF73900C01FE7 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393C26AAF73900C01FE7 /* CodableExtensions.swift */; };
+		CFC4393F26AAFC4300C01FE7 /* DateStringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4393E26AAFC4300C01FE7 /* DateStringConverter.swift */; };
+		CFC4394626AB085600C01FE7 /* MainScreenViewController.swift 16-18-41-237.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4394526AB085600C01FE7 /* MainScreenViewController.swift 16-18-41-237.swift */; };
 		FDC48974C1EAE7A11B69BA58 /* Pods_airvironment_mobile_ios_rbt_summer_2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CEFE4EF9E09F19138E26D /* Pods_airvironment_mobile_ios_rbt_summer_2021.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,17 +82,22 @@
 		CFC438EE26A96CDF00C01FE7 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		CFC438F226A96D1B00C01FE7 /* AlamofireDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDataSource.swift; sourceTree = "<group>"; };
 		CFC438F426A96D2900C01FE7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		CFC4390626A97F0200C01FE7 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		CFC4390726A97F0200C01FE7 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		CFC4391426A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		CFC4391526A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryScreenViewCellTableViewCell.xib; sourceTree = "<group>"; };
-		CFC4391A26A9AAC400C01FE7 /* HistoryScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewController.swift; sourceTree = "<group>"; };
-		CFC4391B26A9AAC400C01FE7 /* HistoryScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryScreenViewController.xib; sourceTree = "<group>"; };
 		CFC4391E26A9AE4D00C01FE7 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		CFC4392026A9AFC400C01FE7 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
-		CFC4392326A9C21500C01FE7 /* HistoryScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewController.swift; sourceTree = "<group>"; };
-		CFC4392426A9C21500C01FE7 /* HistoryScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryScreenViewController.xib; sourceTree = "<group>"; };
 		CFC4392726A9C2A200C01FE7 /* HistoryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewModel.swift; sourceTree = "<group>"; };
+		CFC4392A26AAA8BF00C01FE7 /* HistoryScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenViewController.swift; sourceTree = "<group>"; };
+		CFC4392B26AAA8BF00C01FE7 /* HistoryScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryScreenViewController.xib; sourceTree = "<group>"; };
+		CFC4393026AAD2F700C01FE7 /* ViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
+		CFC4393326AAD37400C01FE7 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CFC4393526AAD38000C01FE7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CFC4393726AAD55900C01FE7 /* LoadOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOverlay.swift; sourceTree = "<group>"; };
+		CFC4393826AAD55900C01FE7 /* LoadOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadOverlay.xib; sourceTree = "<group>"; };
+		CFC4393C26AAF73900C01FE7 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
+		CFC4393E26AAFC4300C01FE7 /* DateStringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStringConverter.swift; sourceTree = "<group>"; };
+		CFC4394526AB085600C01FE7 /* MainScreenViewController.swift 16-18-41-237.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainScreenViewController.swift 16-18-41-237.swift"; sourceTree = "<group>"; };
 		E2F41EF7009EFCCE0D013931 /* Pods-airvironment-mobile-ios-rbt-summer-2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airvironment-mobile-ios-rbt-summer-2021.debug.xcconfig"; path = "Target Support Files/Pods-airvironment-mobile-ios-rbt-summer-2021/Pods-airvironment-mobile-ios-rbt-summer-2021.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +169,9 @@
 		CFC438A826A964D400C01FE7 /* airvironment-mobile-ios-rbt-summer-2021 */ = {
 			isa = PBXGroup;
 			children = (
+				CFC4393226AAD36500C01FE7 /* Base */,
+				CFC4392F26AAD2E900C01FE7 /* Util */,
+				CFC4392E26AAD27F00C01FE7 /* Loader */,
 				CFC438F626A96FF400C01FE7 /* Features */,
 				CFC438EC26A96C7400C01FE7 /* RemoteDataSource */,
 				CFC438E626A96B6E00C01FE7 /* Repository */,
@@ -257,7 +270,6 @@
 		CFC438F626A96FF400C01FE7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				CFC4390B26A9A48E00C01FE7 /* View */,
 				CFC4390A26A9A47100C01FE7 /* History Screen */,
 				CFC438D926A9670900C01FE7 /* Main Screen */,
 			);
@@ -267,7 +279,7 @@
 		CFC4390526A97EE900C01FE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC4390626A97F0200C01FE7 /* MainScreenViewController.swift */,
+				CFC4394526AB085600C01FE7 /* MainScreenViewController.swift 16-18-41-237.swift */,
 				CFC4390726A97F0200C01FE7 /* MainScreenViewController.xib */,
 			);
 			path = View;
@@ -276,20 +288,11 @@
 		CFC4390A26A9A47100C01FE7 /* History Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CFC4392226A9C20000C01FE7 /* View */,
+				CFC4392926AAA8AB00C01FE7 /* View */,
 				CFC4391326A9A65200C01FE7 /* Cell */,
 				CFC4390C26A9A4B300C01FE7 /* View Model */,
 			);
 			path = "History Screen";
-			sourceTree = "<group>";
-		};
-		CFC4390B26A9A48E00C01FE7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CFC4391A26A9AAC400C01FE7 /* HistoryScreenViewController.swift */,
-				CFC4391B26A9AAC400C01FE7 /* HistoryScreenViewController.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CFC4390C26A9A4B300C01FE7 /* View Model */ = {
@@ -309,11 +312,47 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		CFC4392226A9C20000C01FE7 /* View */ = {
+		CFC4392926AAA8AB00C01FE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC4392326A9C21500C01FE7 /* HistoryScreenViewController.swift */,
-				CFC4392426A9C21500C01FE7 /* HistoryScreenViewController.xib */,
+				CFC4392A26AAA8BF00C01FE7 /* HistoryScreenViewController.swift */,
+				CFC4392B26AAA8BF00C01FE7 /* HistoryScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC4392E26AAD27F00C01FE7 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4393B26AAD80000C01FE7 /* View */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		CFC4392F26AAD2E900C01FE7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4393026AAD2F700C01FE7 /* ViewUtil.swift */,
+				CFC4393C26AAF73900C01FE7 /* CodableExtensions.swift */,
+				CFC4393E26AAFC4300C01FE7 /* DateStringConverter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CFC4393226AAD36500C01FE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4393326AAD37400C01FE7 /* BaseViewModel.swift */,
+				CFC4393526AAD38000C01FE7 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CFC4393B26AAD80000C01FE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4393826AAD55900C01FE7 /* LoadOverlay.xib */,
+				CFC4393726AAD55900C01FE7 /* LoadOverlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,8 +463,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC438B626A964D500C01FE7 /* LaunchScreen.storyboard in Resources */,
-				CFC4391D26A9AAC400C01FE7 /* HistoryScreenViewController.xib in Resources */,
-				CFC4392626A9C21500C01FE7 /* HistoryScreenViewController.xib in Resources */,
+				CFC4392D26AAA8BF00C01FE7 /* HistoryScreenViewController.xib in Resources */,
+				CFC4393A26AAD55900C01FE7 /* LoadOverlay.xib in Resources */,
 				CFC4390926A97F0200C01FE7 /* MainScreenViewController.xib in Resources */,
 				CFC438B326A964D500C01FE7 /* Assets.xcassets in Resources */,
 				CFC4391726A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.xib in Resources */,
@@ -498,21 +537,26 @@
 			files = (
 				CFC438E926A96BC100C01FE7 /* Repository.swift in Sources */,
 				CFC438F326A96D1B00C01FE7 /* AlamofireDataSource.swift in Sources */,
-				CFC4391C26A9AAC400C01FE7 /* HistoryScreenViewController.swift in Sources */,
+				CFC4393926AAD55900C01FE7 /* LoadOverlay.swift in Sources */,
+				CFC4394626AB085600C01FE7 /* MainScreenViewController.swift 16-18-41-237.swift in Sources */,
 				CFC438F526A96D2900C01FE7 /* Router.swift in Sources */,
+				CFC4393126AAD2F700C01FE7 /* ViewUtil.swift in Sources */,
+				CFC4393626AAD38000C01FE7 /* BaseViewController.swift in Sources */,
 				CFC4392826A9C2A200C01FE7 /* HistoryScreenViewModel.swift in Sources */,
+				CFC4393426AAD37400C01FE7 /* BaseViewModel.swift in Sources */,
 				CFC438AE26A964D400C01FE7 /* ViewController.swift in Sources */,
-				CFC4390826A97F0200C01FE7 /* MainScreenViewController.swift in Sources */,
 				CFC438E526A9681F00C01FE7 /* MeasurementResponse.swift in Sources */,
 				CFC438EF26A96CDF00C01FE7 /* RemoteDataSource.swift in Sources */,
 				CFC438DD26A9677800C01FE7 /* MainScreenViewModel.swift in Sources */,
 				CFC438AA26A964D400C01FE7 /* AppDelegate.swift in Sources */,
-				CFC4392526A9C21500C01FE7 /* HistoryScreenViewController.swift in Sources */,
+				CFC4392C26AAA8BF00C01FE7 /* HistoryScreenViewController.swift in Sources */,
 				CFC438AC26A964D400C01FE7 /* SceneDelegate.swift in Sources */,
 				CFC4391F26A9AE4D00C01FE7 /* Meta.swift in Sources */,
+				CFC4393F26AAFC4300C01FE7 /* DateStringConverter.swift in Sources */,
 				CFC4392126A9AFC400C01FE7 /* Measurement.swift in Sources */,
 				CFC4391626A9AA1600C01FE7 /* HistoryScreenViewCellTableViewCell.swift in Sources */,
 				CFC438EB26A96BDB00C01FE7 /* RepositoryImplementation.swift in Sources */,
+				CFC4393D26AAF73900C01FE7 /* CodableExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

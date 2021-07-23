@@ -17,6 +17,7 @@ class AlamofireDataSource: RemoteDataSource {
             case.success(_):
                 do {
                     let jsonDecoder = JSONDecoder()
+                    jsonDecoder.dateDecodingStrategy = .custom(JSONDecoder.dateDecodingStrategy)
                     let responseBody: MeasurementResponse = try jsonDecoder.decode(MeasurementResponse.self, from: serverResponse.data!) as MeasurementResponse
                     result(.success(responseBody))
                 } catch let error {
@@ -34,6 +35,7 @@ class AlamofireDataSource: RemoteDataSource {
             case.success(_):
                 do {
                     let jsonDecoder = JSONDecoder()
+                    jsonDecoder.dateDecodingStrategy = .custom(JSONDecoder.dateDecodingStrategy)
                     let responseBody: Measurement = try jsonDecoder.decode(Measurement.self, from: serverResponse.data!) as Measurement
                     result(.success(responseBody.response))
                 } catch let error {

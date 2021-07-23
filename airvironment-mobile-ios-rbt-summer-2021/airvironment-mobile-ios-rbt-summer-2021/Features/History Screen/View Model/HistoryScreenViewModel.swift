@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HistoryScreenViewModel: NSObject {
+class HistoryScreenViewModel: BaseViewModel {
     
     var repository: Repository!
     @objc dynamic var measurements: Array<MeasurementResponse>?
@@ -16,17 +16,20 @@ class HistoryScreenViewModel: NSObject {
         self.repository = repository
     }
     
-    func onViewDidLoad() {
+    override func onViewDidLoad() {
+        super.onViewDidLoad()
         getAllMeasurements()
     }
     
     private func getAllMeasurements() {
+        self.loading = true
         repository.getAllMeasurements() { result in
             switch result {
             case.success(let measurements):
                 self.measurements = measurements
+                self.loading = false
             case.failure(let error):
-                break
+                self.loading = false
             }
             
         }
